@@ -1,6 +1,7 @@
 #Demo_Distance
 
 1. Create a bean for Routes to store source and destinations passed in the URL.
+
 2. Create a controller class RequestController with @GetMapping and URI = "/connected/origin={origin}&destination={destination}" to get the Source and Destination.
   
   2.a. Check if source and destination are strings and doesnot contain digit.
