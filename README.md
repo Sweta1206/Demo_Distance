@@ -1,8 +1,8 @@
 #Demo_Distance
 
-# Create a bean for Routes to store source and destinations passed in the URL.
+- Create a bean for Routes to store source and destinations passed in the URL.
 
-# Create a controller class RequestController with @GetMapping and URI = "/connected/origin={origin}&destination={destination}" to get the Source and Destination.
+- Create a controller class RequestController with @GetMapping and URI = "/connected/origin={origin}&destination={destination}" to get the Source and Destination.
   
   2.a. Check if source and destination are strings and doesnot contain digit.
   
@@ -26,7 +26,7 @@
       of graph which contains the logic for traversing the map to check if there exists a path from source to destination.
      
      
-# isRachable()
+- isReachable()
 
    4.a Set<> Visited contains the set of nodes of nodes already visited.
    
