@@ -11,7 +11,7 @@
   2.c If path exists then getConnection() returns true else false.
       Service class RouteService contains implementation logic withing getConnection method to check if path exist from source to destination.
   
-  - Read file cities.txt and store the source and destinations as ArrayList of array having source and destination ArrayList<String[]> cities and array[Source,destination].
+- Read file cities.txt and store the source and destinations as ArrayList of array having source and destination ArrayList<String[]> cities and array[Source,destination].
   
   3.a Store the source and destinations in a Set to get uniques nodes to generate a graph with vertex and connecting nodes.
   
