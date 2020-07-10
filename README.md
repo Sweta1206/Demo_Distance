@@ -1,15 +1,15 @@
 #Demo_Distance
 
-1. Create a bean for Routes to store source and destinations passed in the URL.
+# Create a bean for Routes to store source and destinations passed in the URL.
 
-2. Create a controller class RequestController with @GetMapping and URI = "/connected/origin={origin}&destination={destination}" to get the Source and Destination.
+# Create a controller class RequestController with @GetMapping and URI = "/connected/origin={origin}&destination={destination}" to get the Source and Destination.
   
   2.a. Check if source and destination are strings and doesnot contain digit.
   
   2.b. Call findRoute() which will calls service class method getConnection() which checks if the path exists between Source and Destination.
   
   2.c If path exists then getConnection() returns true else false.
-3. Service class RouteService contains implementation logic withing getConnection method to check if path exist from source to destination.
+      Service class RouteService contains implementation logic withing getConnection method to check if path exist from source to destination.
   
   3.a Read file cities.txt and store the source and destinations as ArrayList of array having source and destination ArrayList<String[]> cities and array[Source,destination].
   
@@ -26,7 +26,7 @@
       of graph which contains the logic for traversing the map to check if there exists a path from source to destination.
      
      
-4. isRachable()
+# isRachable()
 
    4.a Set<> Visited contains the set of nodes of nodes already visited.
    
