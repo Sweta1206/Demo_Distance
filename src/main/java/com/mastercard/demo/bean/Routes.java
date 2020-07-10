@@ -2,6 +2,7 @@ package com.mastercard.demo.bean;
 
 public class Routes {
 
+	
 	public String origin;
 	public String destination;
 	

@@ -18,7 +18,7 @@ public class RequestController {
 	@GetMapping("/connected/origin={origin}&destination={destination}")
 	public @ResponseBody String findRoute(@PathVariable String origin, @PathVariable String destination)
 	{
-		if(origin.matches(".*\\d.*")||destination.matches(".*\\d.*"))
+		if(origin.matches(".*\\d.*")||destination.matches(".*\\d.*") || origin==null || destination==null)
 		{
 			return "Please try with correct source and destination";
 		}

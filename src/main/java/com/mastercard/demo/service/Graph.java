@@ -65,8 +65,7 @@ public class Graph {
 				{
 					queue.add(temp);
 					visited.add(temp);
-				}
-					
+				}	
 					
 			}
 		}

@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 import com.mastercard.demo.bean.Routes;
 
 @Service
-@Component
 public class RouteService {
 	
 	public String getConnection(Routes routes)
@@ -57,14 +56,18 @@ public class RouteService {
 			}
 			graph.printGraph();
 			
+			if(routes.getOrigin()!=null && routes.getDestination() !=null)
+			{
 			String origin = routes.getOrigin().toString().trim();
 			String destination = routes.getDestination().toString().trim();
 			
-			if(set.contains(origin) && set.contains(destination) )
+			
+			if(set.contains(origin) && set.contains(destination))
 			{
 			result = graph.isReachable(routes.getOrigin().toString().trim(), routes.getDestination().toString().trim());
 			}
 			
+			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
