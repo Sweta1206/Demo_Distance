@@ -13,17 +13,15 @@
   
 - Read file cities.txt and store the source and destinations as ArrayList of array having source and destination ArrayList<String[]> cities and array[Source,destination].
   
-  3.a Store the source and destinations in a Set to get uniques nodes to generate a graph with vertex and connecting nodes.
+  3.a. Store the source and destinations in a Set to get uniques nodes to generate a graph with vertex and connecting nodes.
   
-  3.b Create a graph.class to define the graph structure which will be a Map with Key as unique cities and values as destination cities it is connected to. Graph.class will also   
-      have methods to generate graph and traverse the graph.
+  3.b. Create a graph.class to define the graph structure which will be a Map with Key as unique cities and values as destination cities it is connected to. Graph class will      also  have methods to generate graph and traverse the graph.
   
-  3.c Call addCities() of graph to define the unique cities as Key of Map.
+  3.c. Call addCities() of graph to define the unique cities as Key of Map.
  
-  3.d Call addEdge() of graph to add connections from key i.e source to various destinates it can route to.
+  3.d. Call addEdge() of graph to add connections from key i.e source to various destinates it can route to.
  
-  3.e As the graph will be generated now the next step is to check if the source and destination pass are present in the vertexs or keys of Map. If yes call isReachable() method          
-      of graph which contains the logic for traversing the map to check if there exists a path from source to destination.
+  3.e. As the graph will be generated now the next step is to check if the source and destination pass are present in the vertexs or keys of Map. If yes call isReachable()   method of graph which contains the logic for traversing the map to check if there exists a path from source to destination.
      
      
 - isReachable()
